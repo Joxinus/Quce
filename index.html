@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>曲冊</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🎵 曲冊</h1>
+    <input type="text" id="search" placeholder="搜尋曲牌、工調或流派…">
+    <button id="exportCsv">📤 匯出 CSV</button>
+  </header>
+
+  <main id="scoreList"></main>
+
+  <footer>
+    <button id="addBtn">＋ 新增樂譜</button>
+  </footer>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>新增樂譜</h2>
+      <input id="title" placeholder="曲牌名稱">
+      <input id="mode" placeholder="工調">
+      <input id="style" placeholder="板式">
+      <input id="school" placeholder="流派">
+      <textarea id="note" placeholder="備註"></textarea>
+      <input type="file" id="imageInput" accept="image/*">
+      <button id="saveBtn">儲存</button>
+      <button id="cancelBtn">取消</button>
+    </div>
+  </div>
+</body>
+</html>
